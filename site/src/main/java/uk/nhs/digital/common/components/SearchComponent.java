@@ -3,6 +3,7 @@ package uk.nhs.digital.common.components;
 import static org.hippoecm.hst.content.beans.query.builder.ConstraintBuilder.and;
 import static org.hippoecm.hst.content.beans.query.builder.ConstraintBuilder.constraint;
 import static org.hippoecm.hst.content.beans.query.builder.ConstraintBuilder.or;
+import static java.util.stream.Collectors.toList;
 
 import org.hippoecm.hst.content.beans.query.HstQuery;
 import org.hippoecm.hst.content.beans.query.builder.Constraint;
@@ -23,8 +24,7 @@ import uk.nhs.digital.ps.beans.LegacyPublication;
 import uk.nhs.digital.ps.beans.Publication;
 import uk.nhs.digital.ps.beans.Series;
 
-import java.util.ArrayList;
-import java.util.Optional;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -59,6 +59,32 @@ public class SearchComponent extends CommonComponent {
                 );
 
             request.setAttribute("pageable", pageable);
+        } else {
+
+            // No results, so parse URL to get selected facets (ONLY if facets exist)
+
+            // sample url is: /site/search/information-type/Official+statistics/year/2017
+            String url = request.getRequestURI();
+
+            // sample extractedFacets: information-type, Official+statistics, year, 2017
+            Object[] extractedFacets  = Arrays.stream(url.split("/"))
+                .filter(o -> !o.equals("") && !o.equals("site") && !o.equals("search"))
+                .toArray();
+
+            if (extractedFacets.length > 0) {
+
+                Map<String, String> facetsAndValues = new HashMap<>();
+
+                for (int i = 0; i < extractedFacets.length; i += 2) {
+                    facetsAndValues.put(extractedFacets[i].toString(), extractedFacets[i + 1].toString());
+                }
+
+
+                // WIP.......
+
+
+
+            }
         }
 
         request.setAttribute("query", getQueryParameter(request));
