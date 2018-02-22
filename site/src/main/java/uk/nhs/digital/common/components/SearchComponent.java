@@ -61,7 +61,7 @@ public class SearchComponent extends CommonComponent {
             request.setAttribute("pageable", pageable);
         } else {
 
-            // No results, so parse URL to get selected facets (ONLY if facets exist)
+            // No results, so parse URL to get selected facets
 
             // sample url is: /site/search/information-type/Official+statistics/year/2017
             String url = request.getRequestURI();
@@ -71,6 +71,7 @@ public class SearchComponent extends CommonComponent {
                 .filter(o -> !o.equals("") && !o.equals("site") && !o.equals("search"))
                 .toArray();
 
+            // (ONLY if facets exist)
             if (extractedFacets.length > 0) {
 
                 Map<String, String> facetsAndValues = new HashMap<>();
