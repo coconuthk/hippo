@@ -1,6 +1,7 @@
 <#ftl output_format="HTML">
 <#include "../include/imports.ftl">
 <#include "macro/articleSections.ftl">
+<#include "macro/fileMetaAppendix.ftl">
 <#include "macro/metaTags.ftl">
 
 <#-- Add meta tags -->
@@ -69,10 +70,12 @@
                                         <#assign onClickMethodCall = getOnClickMethodCall(document.class.name, childPage.link) />
                                         <#if childPage.type == "external">
                                             <#-- Assign the link property of the externallink compound -->
-                                            <h2 class="cta__title"><a href="${childPage.link}" onClick="${onClickMethodCall}">${childPage.title}</a>${childPage.link}</h2>
+                                            <h2 class="cta__title"><a href="${childPage.link}" onClick="${onClickMethodCall}">${childPage.title}</a></h2>
                                             <p class="cta__text">${childPage.shortsummary}</p>
                                         <#elseif childPage.type == "asset">
-                                            <h2 class="cta__title"><a href="${childPage.link}" onClick="${onClickMethodCall}">${childPage.filename}</a></h2>
+                                            <h2 class="cta__title">
+                                                <a href="<@hst.link hippobean=childPage.link />" onClick="${onClickMethodCall}">${childPage.filename}</a><@fileMetaAppendix childPage.link.asset.getLength()></@fileMetaAppendix>
+                                            </h2>
                                         </#if>
                                     <#elseif hst.isBeanType(childPage, 'org.hippoecm.hst.content.beans.standard.HippoBean')>
                                     <#-- In case the childPage is not a compound but still a document in the cms, then create a link to it-->
