@@ -21,7 +21,7 @@ definitions:
           hipposys:relPath: publicationsystem:chartConfig
           jcr:primaryType: hipposys:relativepropertyreference
         jcr:primaryType: hipposys:propertyreferences
-      hipposys:classname: uk.nhs.digital.ps.HighChartsConfigDerivedDataFunction
-      hipposys:nodetype: publicationsystem:basedocument
+      hipposys:classname: uk.nhs.digital.ps.HighChartsConfigDerivedDataFunctionz
+      hipposys:nodetype: publicationsystem:chartSection
       hipposys:serialver: 1
       jcr:primaryType: hipposys:deriveddefinition

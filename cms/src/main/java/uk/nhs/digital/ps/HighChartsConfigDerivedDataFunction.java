@@ -25,6 +25,7 @@ public class HighChartsConfigDerivedDataFunction extends DerivedDataFunction {
 
     @Override
     public Map<String, Value[]> compute(Map<String, Value[]> parameters) {
+        new RuntimeException("Creating DerData").printStackTrace();
         try {
             // required fields
             Value dataValue = getValue(parameters, "data");
