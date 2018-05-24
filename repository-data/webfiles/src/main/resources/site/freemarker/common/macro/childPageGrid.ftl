@@ -18,7 +18,7 @@
                         <h2 class="cta__title"><a href="${childPage.link}" onClick="${onClickMethodCall}">${childPage.title}</a></h2>
                         <p class="cta__text">${childPage.shortsummary}</p>
                     <#elseif childPage.type == "asset">
-                        <h2 class="cta__title"><a href="<@hst.link hippobean=childPage.link />" onClick="${onClickMethodCall}">${childPage.filename}</a><@fileMetaAppendix childPage.link.asset.getLength()></@fileMetaAppendix></h2>
+                        <h2 class="cta__title"><a href="<@hst.link hippobean=childPage.link />" onClick="${onClickMethodCall}">${childPage.title}</a><@fileMetaAppendix childPage.link.asset.getLength()></@fileMetaAppendix></h2>
                     </#if>
                 <#elseif hst.isBeanType(childPage, 'org.hippoecm.hst.content.beans.standard.HippoBean')>
                 <#-- In case the childPage is not a compound but still a document in the cms, then create a link to it-->

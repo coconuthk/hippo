@@ -45,7 +45,7 @@
                                     <h2 class="cta__title"><a href="${block.link}" onClick="${onClickMethodCall}">${block.title}</a></h2>
                                     <p class="cta__text">${block.shortsummary}</p>
                                     <#elseif block.getType() == "asset">
-                                    <a href="<@hst.link hippobean=block.link />" onClick="${onClickMethodCall}">${block.filename}</a><@fileMetaAppendix block.link.asset.getLength()></@fileMetaAppendix>
+                                    <a href="<@hst.link hippobean=block.link />" onClick="${onClickMethodCall}">${block.title}</a><@fileMetaAppendix block.link.asset.getLength()></@fileMetaAppendix>
                                     </#if>
                                 </div>
                                 </#list>
