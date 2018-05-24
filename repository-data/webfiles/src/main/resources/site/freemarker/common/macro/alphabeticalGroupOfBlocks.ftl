@@ -30,13 +30,20 @@
                 <div class="list list--reset cta-list cta-list--sections">
                     <#list blockGroups[letter] as block>
                     <div class="cta">
-                        <#if block.type?? && block.type == "external">
-                        <#assign onClickMethodCall = getOnClickMethodCall(document.class.name, block.link) />
-                        <h2 class="cta__title"><a href="${block.link}" onClick="${onClickMethodCall}">${block.title}</a></h2>
+                        <#if block.type??>
+                            <#assign onClickMethodCall = getOnClickMethodCall(document.class.name, block.link) />
+
+                            <#if block.type == "external">
+                            <h2 class="cta__title"><a href="${block.link}" onClick="${onClickMethodCall}">${block.title}</a></h2>
+                            <p class="cta__text">${block.shortsummary}</p>
+                            <#elseif block.type == "asset">
+                            <h2 class="cta__title"><a href="<@hst.link hippobean=block.link />" onClick="${onClickMethodCall}">${block.title}</a><@fileMetaAppendix block.link.asset.getLength()></@fileMetaAppendix></h2>
+                            </#if>
                         <#else>
-                        <h2 class="cta__title"><a href="<@hst.link hippobean=block />">${block.title}</a></h2>
+                            <h2 class="cta__title"><a href="<@hst.link hippobean=block />">${block.title}</a></h2>
+                            <p class="cta__text">${block.shortsummary}</p>
                         </#if>
-                        <p class="cta__text">${block.shortsummary}</p>
+                        
                     </div>
                     </#list>
                 </div>
