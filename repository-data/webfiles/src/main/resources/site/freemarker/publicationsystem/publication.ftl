@@ -108,14 +108,14 @@
                         <#list publication.attachments as attachment>
                             <li class="attachment">
                                 <@externalstorageLink attachment.resource; url>
-                                <a title="${attachment.text}" href="${url}" onClick="logGoogleAnalyticsEvent('Download attachment','Publication','${attachment.resource.filename}');">${attachment.text}</a>;
+                                <a title="${attachment.text}" href="${url}" onClick="logGoogleAnalyticsEvent('Download attachment','Publication','${attachment.resource.filename}');" onKeyUp="return vjsu.onKeyUp(event)">${attachment.text}</a>;
                                 </@externalstorageLink>
                                 <span class="fileSize">[size: <@formatFileSize bytesCount=attachment.resource.length/>]</span>
                             </li>
                         </#list>
                         <#list publication.resourceLinks as link>
                             <li>
-                                <a href="${link.linkUrl}" onClick="logGoogleAnalyticsEvent('Link click','Publication','${link.linkUrl}');" title="${link.linkText}">${link.linkText}</a>
+                                <a href="${link.linkUrl}" onClick="logGoogleAnalyticsEvent('Link click','Publication','${link.linkUrl}');" onKeyUp="return vjsu.onKeyUp(event)" title="${link.linkText}">${link.linkText}</a>
                             </li>
                         </#list>
                         </ul>
@@ -128,7 +128,7 @@
                         <ul data-uipath="ps.publication.related-links" class="list">
                             <#list publication.relatedLinks as link>
                                 <li>
-                                    <a href="${link.linkUrl}" onClick="logGoogleAnalyticsEvent('Link click','Publication','${link.linkUrl}');" title="${link.linkText}">${link.linkText}</a>
+                                    <a href="${link.linkUrl}" onClick="logGoogleAnalyticsEvent('Link click','Publication','${link.linkUrl}');" onKeyUp="return vjsu.onKeyUp(event)" title="${link.linkText}">${link.linkText}</a>
                                 </li>
                             </#list>
                         </ul>

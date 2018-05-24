@@ -31,7 +31,7 @@
                     <div class="cta">
                         <#if block.type?? && block.type == "external">
                         <#assign onClickMethodCall = getOnClickMethodCall(document.class.name, block.link) />
-                        <h2 class="cta__title"><a href="${block.link}" onClick="${onClickMethodCall}">${block.title}</a></h2>
+                        <h2 class="cta__title"><a href="${block.link}" onClick="${onClickMethodCall}" onKeyUp="return vjsu.onKeyUp(event)">${block.title}</a></h2>
                         <#else>
                         <h2 class="cta__title"><a href="<@hst.link hippobean=block />">${block.title}</a></h2>
                         </#if>

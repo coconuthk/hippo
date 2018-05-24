@@ -98,14 +98,14 @@
             <#list dataset.files as attachment>
                 <li class="attachment">
                     <@externalstorageLink attachment.resource; url>
-                    <a title="${attachment.text}" href="${url}" onClick="logGoogleAnalyticsEvent('Download attachment','Data set','${attachment.resource.filename}');">${attachment.text}</a>;
+                    <a title="${attachment.text}" href="${url}" onClick="logGoogleAnalyticsEvent('Download attachment','Data set','${attachment.resource.filename}');" onKeyUp="return vjsu.onKeyUp(event)">${attachment.text}</a>;
                     </@externalstorageLink>
                     <span class="fileSize">[size: <@formatFileSize bytesCount=attachment.resource.length/>]</span>
                 </li>
             </#list>
             <#list dataset.resourceLinks as link>
                 <li>
-                    <a href="${link.linkUrl}" onClick="logGoogleAnalyticsEvent('Link click','Data set','${link.linkUrl}');">${link.linkText}</a>
+                    <a href="${link.linkUrl}" onClick="logGoogleAnalyticsEvent('Link click','Data set','${link.linkUrl}');" onKeyUp="return vjsu.onKeyUp(event)">${link.linkText}</a>
                 </li>
             </#list>
         </ul>
