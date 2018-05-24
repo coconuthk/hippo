@@ -72,7 +72,7 @@
     <#list blocks as block>
         <#if block.getType() == "internal">
             <#local flattened_blocks = flattened_blocks + [ block.link ] />
-        <#elseif block.getType() == "external">
+        <#elseif block.getType() == "external" || block.getType() == "asset">
             <#local flattened_blocks = flattened_blocks + [ block ] />
         </#if>
     </#list>
@@ -138,6 +138,6 @@
 
         <#local dateRangeData = dateRangeData + { "comparableStartDate": comparableStartDate, "comparableEndDate": comparableEndDate } />
     </#if>
-    
+
     <#return dateRangeData />
 </#function>

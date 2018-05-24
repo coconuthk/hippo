@@ -19,6 +19,11 @@ public class Assetlink extends HippoCompound {
         return getProperty("website:filename");
     }
 
+    // convienent method for ordering using the flat_block
+    public String getTitle() {
+        return getProperty("website:filename");
+    }
+
     @HippoEssentialsGenerated(internalName = "website:link")
     public HippoBean getLink() {
         return getLinkedBean("website:link", HippoBean.class);
