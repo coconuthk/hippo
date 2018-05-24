@@ -1,6 +1,481 @@
 ---
 /content/documents/corporate-website/publication-system/acceptance-tests:
   .meta:order-before: ci-hub
+  /charts-publication:
+    /content:
+      /content[1]:
+        common:FacetType: publication
+        common:searchRank: 4
+        common:searchable: true
+        hippo:availability: []
+        hippostd:state: draft
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2018-02-28T17:21:32.896Z
+        hippostdpubwf:lastModificationDate: 2018-05-23T14:14:53.876Z
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: 3d04e9b5-c91a-4d8f-a06c-d0e5a4c06bbc
+        hippotranslation:locale: en
+        jcr:mixinTypes:
+        - hippotaxonomy:classifiable
+        - mix:referenceable
+        jcr:primaryType: publicationsystem:publication
+        publicationsystem:AdministrativeSources: ''
+        publicationsystem:CoverageEnd: 2018-03-01T00:00:00Z
+        publicationsystem:CoverageStart: 2018-01-01T00:00:00Z
+        publicationsystem:GeographicCoverage: []
+        publicationsystem:Granularity: []
+        publicationsystem:InformationType: []
+        publicationsystem:KeyFacts: ''
+        publicationsystem:NominalDate: 2018-05-22T23:00:00Z
+        publicationsystem:PubliclyAccessible: true
+        publicationsystem:Summary: There be charts
+        publicationsystem:Title: Charts Publications
+      /content[2]:
+        common:FacetType: publication
+        common:searchRank: 4
+        common:searchable: true
+        hippo:availability:
+        - preview
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2018-02-28T17:21:32.896Z
+        hippostdpubwf:lastModificationDate: 2018-05-23T14:16:58.574Z
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: 3d04e9b5-c91a-4d8f-a06c-d0e5a4c06bbc
+        hippotranslation:locale: en
+        jcr:mixinTypes:
+        - hippotaxonomy:classifiable
+        - mix:versionable
+        jcr:primaryType: publicationsystem:publication
+        publicationsystem:AdministrativeSources: ''
+        publicationsystem:CoverageEnd: 2018-03-01T00:00:00Z
+        publicationsystem:CoverageStart: 2018-01-01T00:00:00Z
+        publicationsystem:GeographicCoverage: []
+        publicationsystem:Granularity: []
+        publicationsystem:InformationType: []
+        publicationsystem:KeyFacts: ''
+        publicationsystem:NominalDate: 2018-05-22T23:00:00Z
+        publicationsystem:PubliclyAccessible: true
+        publicationsystem:Summary: There be charts
+        publicationsystem:Title: Charts Publications
+      /content[3]:
+        common:FacetType: publication
+        common:searchRank: 4
+        common:searchable: true
+        hippo:availability:
+        - live
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2018-02-28T17:21:32.896Z
+        hippostdpubwf:lastModificationDate: 2018-05-23T14:16:58.574Z
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2018-05-23T14:18:27.252Z
+        hippotranslation:id: 3d04e9b5-c91a-4d8f-a06c-d0e5a4c06bbc
+        hippotranslation:locale: en
+        jcr:mixinTypes:
+        - hippotaxonomy:classifiable
+        - mix:referenceable
+        jcr:primaryType: publicationsystem:publication
+        publicationsystem:AdministrativeSources: ''
+        publicationsystem:CoverageEnd: 2018-03-01T00:00:00Z
+        publicationsystem:CoverageStart: 2018-01-01T00:00:00Z
+        publicationsystem:GeographicCoverage: []
+        publicationsystem:Granularity: []
+        publicationsystem:InformationType: []
+        publicationsystem:KeyFacts: ''
+        publicationsystem:NominalDate: 2018-05-22T23:00:00Z
+        publicationsystem:PubliclyAccessible: true
+        publicationsystem:Summary: There be charts
+        publicationsystem:Title: Charts Publications
+      jcr:mixinTypes:
+      - mix:referenceable
+      jcr:primaryType: hippo:handle
+    /interactive-visualisations:
+      /interactive-visualisations[1]:
+        /publicationsystem:bodySections[1]:
+          /publicationsystem:text:
+            hippostd:content: <p>Below is an example of the different types of chart</p>
+            jcr:primaryType: hippostd:html
+          jcr:primaryType: publicationsystem:textSection
+          publicationsystem:heading: Chart Examples
+        /publicationsystem:bodySections[2]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[1]/bodySections[2]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[1]/bodySections[2]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:58:58.852Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Bar
+          publicationsystem:type: Bar
+          publicationsystem:yTitle: Thousands
+        /publicationsystem:bodySections[3]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[1]/bodySections[3]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[1]/bodySections[3]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:05.592Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Pie
+          publicationsystem:type: Pie
+          publicationsystem:yTitle: ''
+        /publicationsystem:bodySections[4]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[1]/bodySections[4]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[1]/bodySections[4]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:15.512Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Line
+          publicationsystem:type: Line
+          publicationsystem:yTitle: Thousands
+        /publicationsystem:bodySections[5]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[1]/bodySections[5]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[1]/bodySections[5]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:22.802Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Column
+          publicationsystem:type: Column
+          publicationsystem:yTitle: Thousands
+        /publicationsystem:bodySections[6]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[1]/bodySections[6]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[1]/bodySections[6]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:29.527Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Stacked Bar
+          publicationsystem:type: Stacked Bar
+          publicationsystem:yTitle: Thousands
+        /publicationsystem:bodySections[7]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[1]/bodySections[7]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[1]/bodySections[7]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:36.910Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Stacked Column
+          publicationsystem:type: Stacked Column
+          publicationsystem:yTitle: Thousands
+        common:searchable: true
+        hippo:availability: []
+        hippostd:state: draft
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2018-04-09T12:30:41.734Z
+        hippostdpubwf:lastModificationDate: 2018-05-23T14:17:32.410Z
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: 32023db5-65e7-4b50-b7e2-9d6f39619d20
+        hippotranslation:locale: en
+        jcr:mixinTypes:
+        - mix:referenceable
+        jcr:primaryType: publicationsystem:publicationPage
+        publicationsystem:Title: Interactive Visualisations
+      /interactive-visualisations[2]:
+        /publicationsystem:bodySections[1]:
+          /publicationsystem:text:
+            hippostd:content: <p>Below is an example of the different types of chart</p>
+            jcr:primaryType: hippostd:html
+          jcr:primaryType: publicationsystem:textSection
+          publicationsystem:heading: Chart Examples
+        /publicationsystem:bodySections[2]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[2]/bodySections[2]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[2]/bodySections[2]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:58:58.852Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Bar
+          publicationsystem:type: Bar
+          publicationsystem:yTitle: Thousands
+        /publicationsystem:bodySections[3]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[2]/bodySections[3]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[2]/bodySections[3]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:05.592Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Pie
+          publicationsystem:type: Pie
+          publicationsystem:yTitle: ''
+        /publicationsystem:bodySections[4]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[2]/bodySections[4]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[2]/bodySections[4]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:15.512Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Line
+          publicationsystem:type: Line
+          publicationsystem:yTitle: Thousands
+        /publicationsystem:bodySections[5]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[2]/bodySections[5]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[2]/bodySections[5]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:22.802Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Column
+          publicationsystem:type: Column
+          publicationsystem:yTitle: Thousands
+        /publicationsystem:bodySections[6]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[2]/bodySections[6]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[2]/bodySections[6]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:29.527Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Stacked Bar
+          publicationsystem:type: Stacked Bar
+          publicationsystem:yTitle: Thousands
+        /publicationsystem:bodySections[7]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[2]/bodySections[7]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[2]/bodySections[7]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:36.910Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Stacked Column
+          publicationsystem:type: Stacked Column
+          publicationsystem:yTitle: Thousands
+        common:searchable: true
+        hippo:availability:
+        - preview
+        hippostd:state: unpublished
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2018-04-09T12:30:41.734Z
+        hippostdpubwf:lastModificationDate: 2018-05-17T11:01:59.531Z
+        hippostdpubwf:lastModifiedBy: admin
+        hippotranslation:id: 32023db5-65e7-4b50-b7e2-9d6f39619d20
+        hippotranslation:locale: en
+        jcr:mixinTypes:
+        - mix:versionable
+        jcr:primaryType: publicationsystem:publicationPage
+        publicationsystem:Title: Interactive Visualisations
+      /interactive-visualisations[3]:
+        /publicationsystem:bodySections[1]:
+          /publicationsystem:text:
+            hippostd:content: <p>Below is an example of the different types of chart</p>
+            jcr:primaryType: hippostd:html
+          jcr:primaryType: publicationsystem:textSection
+          publicationsystem:heading: Chart Examples
+        /publicationsystem:bodySections[2]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[3]/bodySections[2]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[3]/bodySections[2]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:58:58.852Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Bar
+          publicationsystem:type: Bar
+          publicationsystem:yTitle: Thousands
+        /publicationsystem:bodySections[3]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[3]/bodySections[3]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[3]/bodySections[3]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:05.592Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Pie
+          publicationsystem:type: Pie
+          publicationsystem:yTitle: ''
+        /publicationsystem:bodySections[4]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[3]/bodySections[4]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[3]/bodySections[4]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:15.512Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Line
+          publicationsystem:type: Line
+          publicationsystem:yTitle: Thousands
+        /publicationsystem:bodySections[5]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[3]/bodySections[5]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[3]/bodySections[5]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:22.802Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Column
+          publicationsystem:type: Column
+          publicationsystem:yTitle: Thousands
+        /publicationsystem:bodySections[6]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[3]/bodySections[6]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[3]/bodySections[6]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:29.527Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Stacked Bar
+          publicationsystem:type: Stacked Bar
+          publicationsystem:yTitle: Thousands
+        /publicationsystem:bodySections[7]:
+          /publicationsystem:dataFile:
+            hippo:filename: Admissions Test Data.xlsx
+            hippo:text:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[3]/bodySections[7]/dataFile/text.bin
+              type: binary
+            jcr:data:
+              resource: /content/documents/corporate-website/publication-system/acceptance-tests/charts-publication/interactive-visualisations/interactive-visualisations[3]/bodySections[7]/dataFile/data.bin
+              type: binary
+            jcr:encoding: UTF-8
+            jcr:lastModified: 2018-05-17T10:59:36.910Z
+            jcr:mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            jcr:primaryType: publicationsystem:resource
+          jcr:primaryType: publicationsystem:chartSection
+          publicationsystem:title: Admissions - Stacked Column
+          publicationsystem:type: Stacked Column
+          publicationsystem:yTitle: Thousands
+        common:searchable: true
+        hippo:availability:
+        - live
+        hippostd:state: published
+        hippostdpubwf:createdBy: admin
+        hippostdpubwf:creationDate: 2018-04-09T12:30:41.734Z
+        hippostdpubwf:lastModificationDate: 2018-05-17T11:01:59.531Z
+        hippostdpubwf:lastModifiedBy: admin
+        hippostdpubwf:publicationDate: 2018-05-23T14:18:27.362Z
+        hippotranslation:id: 32023db5-65e7-4b50-b7e2-9d6f39619d20
+        hippotranslation:locale: en
+        jcr:mixinTypes:
+        - mix:referenceable
+        jcr:primaryType: publicationsystem:publicationPage
+        publicationsystem:Title: Interactive Visualisations
+      hippo:name: Interactive Visualisations
+      jcr:mixinTypes:
+      - hippo:named
+      - mix:referenceable
+      jcr:primaryType: hippo:handle
+    hippo:name: Charts Publication
+    hippostd:foldertype:
+    - new-statistical-publications-and-clinical-indicators-folder
+    - new-statistical-publications-and-clinical-indicators-document
+    hippotranslation:id: 8fcdcd56-9e0b-442a-bd3c-a2102a42617c
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippo:named
+    - hippotranslation:translated
+    - mix:versionable
+    jcr:primaryType: hippostd:folder
   hippo:name: Acceptance Tests
   hippostd:foldertype:
   - new-statistical-publications-and-clinical-indicators-document
