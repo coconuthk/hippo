@@ -114,7 +114,7 @@
           jcr:primaryType: publicationsystem:chartSection
           publicationsystem:title: Admissions - Bar
           publicationsystem:type: Bar
-          publicationsystem:yTitle: Thousands
+          publicationsystem:yTitle: Thousand
         /publicationsystem:bodySections[3]:
           /publicationsystem:dataFile:
             hippo:filename: Admissions Test Data.xlsx
@@ -212,7 +212,7 @@
         jcr:mixinTypes:
         - mix:referenceable
         jcr:primaryType: publicationsystem:publicationPage
-        publicationsystem:Title: Interactive Visualisations
+        publicationsystem:Title: Interactive Visualisation
       /interactive-visualisations[2]:
         /publicationsystem:bodySections[1]:
           /publicationsystem:text:
